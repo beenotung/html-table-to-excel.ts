@@ -2,23 +2,6 @@
   "name": "html-table-to-excel.ts",
   "version": "1.0.0",
   "description": "Convert a html table element into excel file",
-  "main": "core.js",
-  "types": "core.d.ts",
-  "browser": "browser.js",
-  "unpkg": "browser.js",
-  "scripts": {
-    "test": "tsc --noEmit",
-    "build": "run-p tsc bundle esm",
-    "bundle": "esbuild --bundle browser.ts --outfile=browser.js",
-    "esm": "esbuild core.ts --outfile=esm.js",
-    "tsc": "tsc -p ."
-  },
-  "files": [
-    "browser.js",
-    "esm.js",
-    "core.js",
-    "core.d.ts"
-  ],
   "keywords": [],
   "author": {
     "name": "Beeno Tung",
@@ -26,6 +9,23 @@
     "url": "https://beeno-tung.surge.sh"
   },
   "license": "BSD-2-Clause",
+  "main": "core.js",
+  "types": "core.d.ts",
+  "browser": "browser.js",
+  "unpkg": "browser.js",
+  "files": [
+    "browser.js",
+    "esm.js",
+    "core.js",
+    "core.d.ts"
+  ],
+  "scripts": {
+    "test": "tsc --noEmit",
+    "build": "run-p tsc bundle esm",
+    "bundle": "esbuild --bundle browser.ts --outfile=browser.js",
+    "esm": "esbuild core.ts --outfile=esm.js",
+    "tsc": "tsc -p ."
+  },
   "devDependencies": {
     "@types/node": "^20.5.7",
     "esbuild": "^0.19.2",
